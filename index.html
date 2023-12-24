@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- document title -->
+    <title>WP Pusher Checkout</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--main body -->
+    <div class="main-container">
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/wppusher-logo.png" alt="Site Logo">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Learn more</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li class="nav-focus"><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="after-nav">
+
+        <div class="content-section">
+            <section class="left-section">
+                <div class="inner-left">
+                    <h2>Checkout</h2>
+                    <hr class="hr-under-checkout">
+                <form action="">
+                <!-- Basic Information -->
+                <div class="basic">
+                    
+                        <p class="basic-info-text text"><span class="circle">1</span>   Your Basic Information</p>
+
+                        <div class="first-form">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" placeholder="Jane">
+                        </div>
+
+                        <div class="first-form">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" placeholder="Doe">
+                        </div>
+
+                        <div class="email-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="janedoe@example.com">
+                        </div>
+            
+                </div>
+                    <hr class="line-before-payment">
+                <!-- payment information -->
+                <div class="payment">
+                        <p class="payment-info-text text"><span class="circle">2</span> Your Payment Information</p>
+
+                        <div class="form-input">
+                            <label for="c-card">Credit Card</label>
+                            <input type="text" name="c-card" id="c-card">
+                            
+                            <div class="c-card-placeholder">
+                                <p class="c-card-number">
+                                    Card Number
+                                </p>
+                                <p class="c-card-expiry">
+                                    MM/YY
+                                </p>
+                                <p class="c-card-cvv">CVV</p>
+                            </div>
+                        </div>
+                </div>
+                <hr class="hr-before-button">
+                <button>Buy WP Pusher</button>
+                <p class="support"><span class="circle">?</span> <b>Nead any help?</b> <span class="support-cont">Don't hesitate to <a href="#">contact support</span></a></p>
+
+                <img src="./assets/images/Shape.png" alt="Stripe icon(Powered by Stripe)" class="payment-icon">
+            </form>
+
+                </div>
+            </section>
+
+            <section class="right-section">
+                <div class="inner-right-section">
+                    <p class="right-title">Freelancer</p>
+                    <p class="price-tag"><sup>&dollar;</sup>99<sub>/ year</sub></p>
+                    <p class="renew"><i>Automatically renews <br> after one year</i></p>
+                    
+                    <ul>
+                        <li><img src="./assets/images/list-icon.png" alt="List icon" class="list-icon">Use on 5 client sites</li>
+                        <li><img src="./assets/images/list-icon.png" alt="List icon" class="list-icon">Private respositories</li>
+                        <li><img src="./assets/images/list-icon.png" alt="List icon" class="list-icon">Email support</li>
+                    </ul>
+
+                    <!-- switch agency section -->
+                    <p class="switch-agency">Need 20 site clients? <br> <span class="switch2"><a href="#">Switch to Agency</a></span></p>
+
+                    <hr class="right-hr">
+                    
+                    <!-- FTP -->
+                    <p class="ftp">FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!</p>
+                    <div class="user">
+                        <img src="./assets/images/Bitmap.png" alt="User's Display Picture" class="user-pic">
+                        <p class="user-name">Kirk Beard</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer">
+                <p class="footer-text">
+                    &copy; 2023 WP Pusher IVS. <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

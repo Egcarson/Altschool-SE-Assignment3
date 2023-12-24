@@ -1,0 +1,401 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, .main-container{
+    font-family: 'Lato', sans-serif;
+    height: 1170px;
+    background: rgba(245, 248, 250, 1);
+}
+
+/* Navigation bar styling */
+nav{
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 10px;
+
+    & ul{
+        list-style: none;
+        display: flex;
+        right: 20px;
+        position: absolute;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: -0.01px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgba(29, 44, 60, 1);
+        
+        
+        > li{
+            justify-content: center;
+            padding-right: 44px;
+            /* border: 2px solid rgba(100, 110, 122, 1); */
+            text-align: center;
+           
+            > a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    & img{
+        position: relative;
+        width: 200px;
+        height: 39px;
+        top: -10px;
+        left: 40px;
+    }
+}
+
+/* .nav-focus{
+    border: 2px solid rgba(100, 110, 122, 1);
+    border-radius: 8px;
+    width: 91px;
+    height: 40px;
+} */
+
+.after-nav{
+    width: 1300px;
+    height: 3px;
+    background-color: rgba(224, 230, 234, 1);
+    margin: 0 auto;
+    border: none;
+}
+/* end of Navigation */
+
+/* Styling of main content */
+.content-section{
+    display: flex;
+    position: absolute;
+    width: 892px;
+    height: 795px;
+    top: 186px;
+    left: 262px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+/* Styling the Left Section */
+/* Basic information */
+.left-section{
+    flex: 2;
+}
+
+.inner-left{
+    margin: 48px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    line-height: 36px;
+    font-weight: 400px;
+    color: rgba(29, 44, 60, 1);
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+    /* position: absolute; */
+    margin-bottom: 30px;
+}
+
+.hr-under-checkout{
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+    background-color: rgba(224, 230, 234, 1);
+    border: none;
+}
+
+.basic-info-text, .text{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21.6px;
+    color: rgba(29, 44, 60, 1);
+    margin-bottom: 20px;
+}
+/* span{
+    width: 50px;
+    height: 50px;
+} */
+
+.circle{
+    border: 2px solid rgba(84, 139, 197, 1);
+    position: relative;
+    display: inline-block;
+    /* font-size: 24px; */
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color:rgba(84, 139, 197, 1);
+    margin-right: 15px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    padding: 10px;
+    margin: 8px 0;
+    background: rgba(237, 239, 242, 1);
+    border-radius: 4px;
+    /* outline: none; */
+    border: none;
+  }
+
+.first-form{
+    display: inline-block;
+    width: 227px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 16.8px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.email-input{
+    width:370px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16.8px;
+}
+
+.line-before-payment{
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+    background-color: rgba(224, 230, 234, 1);
+    border: none;
+}
+
+.c-card-placeholder{
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 400;
+    color: rgba(100, 110, 122, 1);
+    display: flex;
+    position: relative;
+}
+
+.c-card-number{
+    position: absolute;
+    bottom: 17px;
+    left: 10px;
+}
+
+.c-card-expiry{
+    position: absolute;
+    bottom: 17px;
+    right: 80px;
+}
+
+.c-card-cvv{
+    position: absolute;
+    bottom: 17px;
+    right: 20px;
+}
+
+.hr-before-button{
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    background-color: rgba(224, 230, 234, 1);
+    border: none;
+}
+
+button{
+    margin: 40px 10px 20px 8px;
+    width: 483px;
+    height: 52px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(3, 142, 125, 1);
+    border: none;
+    border-radius: 10px;
+}
+
+.support{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: rgba(29, 44, 60, 1);
+
+
+    & a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    > .support-cont{
+        color: rgba(100, 110, 122, 1);
+    }
+}
+
+.payment-icon{
+    display: flex;
+    margin: 20px auto;
+}
+
+/* Styling the Right Section */
+.right-section{
+    flex: 1;
+    border-radius: 0px, 6px, 6px, 0px;
+    background: rgba(17, 121, 191, 1);
+}
+
+.inner-right-section{
+    margin: 30px;
+}
+
+.right-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.price-tag{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 5px;
+
+    > sub{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }
+
+    > sup{
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+}
+
+.renew{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 10px;
+}
+
+ul{
+    margin-top: 36px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+li{
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.list-icon{
+    padding-right: 10px;
+}
+
+.switch-agency{
+    margin-top: 38px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: -0.01px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.switch2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50.2px;
+    letter-spacing: -0.01px;
+    color: #B9F5FF;
+    
+    > a{
+        text-decoration: underline;
+        color: inherit;
+    }
+}
+
+.right-hr{
+    width: 100%;
+    height: 2px;
+    background: #FFFFFF;
+    opacity: 20.05%;
+    margin-top: 41px;
+    margin-bottom: 41px;
+    border: none;
+}
+
+.ftp{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+    color: #FFFFFF;
+    font-style: italic;
+    margin-bottom: 27px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+
+    > .user-name{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        letter-spacing: -0.01px;
+        color: #FFFFFF;
+        margin-left: 15px;
+    }
+}
+
+.footer{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.8px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #636B6F;
+    position: absolute;
+    display: flex;
+    left: 287px;
+    bottom: -60px;
+
+    & a{
+        text-decoration: none;
+        color: rgba(3, 142, 125, 1);
+    }
+}
